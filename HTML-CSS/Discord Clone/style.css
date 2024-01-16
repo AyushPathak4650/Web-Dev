@@ -94,9 +94,10 @@ ul a:hover {
     font-size: 20px;
     padding: 16px 32px;
     border: none;
+    color: #313338;
 }
 #button2 {
-    background-color: black;
+    background-color: #313338;
     border-radius: 28px;
     font-size: 20px;
     padding: 16px 32px;
