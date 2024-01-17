@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            padding: 0;
+            margin: 0;
+        }
+        .main{
+            display: block;
+            margin: auto;
+            padding: 10px;
+            position: relative;
+            top: 10vh;
+            width: 25vw;
+            min-width: 300px;
+            height: 80vh;
+            max-height: 700px;
+            min-height: 420px;
+            border-radius: 25px;
+            box-shadow: 10px 10px 10px grey;
+            outline:solid 1px grey;
+        }
+        .image{
+            position: relative;
+            border-radius: inherit;
+            height: 45%;
+            width: 100%;
+            background-image: url("https://www.adventurenation.com/blog/wp-content/uploads/2020/05/shutterstock_647153026-Marble-Rocks-of-Bhedaghat.jpg");
+            background-size: cover;
+        }
+        .tags{
+            display: flex;
+            align-items: center;
+            position: relative;
+            height: 10%;
+        }
+        .tags p{
+            border-radius: 23px;
+            padding: 5px 10px;
+            font-size: 0.85rem;
+            margin-left: 10px;
+            border: 1px solid black;
+            font-weight: 800;
+            
+        }
+        .heading{
+            display: flex;
+            align-items: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900;
+            font-size: 1.5rem;
+            position: relative;
+            height: 10%;
+        }
+        .description{
+            display: flex;
+            align-items: center;
+            color: dimgrey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            font-size: 1rem;
+            font-weight: 650;
+            height: 25%;
+
+        }
+        .readmore{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10%;
+        }
+        .readmore button{
+            background-color: aquamarine;
+            padding: 10px 20px;
+            border-radius: 23px;
+            border:none;
+            font-size: 1rem;
+            color: rgb(79, 79, 253);
+            font-weight: 900;
+
+        }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="image"></div>
+      <div class="tags">
+        <p>Nature</p>
+        <p>River</p>
+      </div>
+      <div class="heading">Marble Rocks of Bhedaghat</div>
+      <div class="description">Situated on the Narmada river, Marble rocks of Bhedaghat in Jabalpur and truly a mesmerizing sight. The gushing Dhuandhar waterfalls along with the Marble rocks is a gorgeous creation of nature.</div>
+      <div class="readmore"><a href="#"><button>Read More</button></a></div>
+    </div>
+  </body>
+</html>
