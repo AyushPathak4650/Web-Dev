@@ -39,13 +39,15 @@
             align-items: center;
             position: relative;
             height: 10%;
+            flex-shrink: 1;
         }
         .tags p{
+            color: dimgray;
             border-radius: 23px;
             padding: 5px 10px;
             font-size: 0.85rem;
             margin-left: 10px;
-            border: 1px solid black;
+            border: 1px solid dimgrey;
             font-weight: 800;
             
         }
@@ -61,13 +63,15 @@
         .description{
             display: flex;
             align-items: center;
-            color: dimgrey;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             position: relative;
-            font-size: 1rem;
-            font-weight: 650;
             height: 25%;
-
+        }
+        .description p {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 1rem;
+          color: dimgrey;
+          font-weight: 650;
+          max-width: fit-content;
         }
         .readmore{
             position: relative;
@@ -82,7 +86,7 @@
             border-radius: 23px;
             border:none;
             font-size: 1rem;
-            color: rgb(79, 79, 253);
+            color: rgb(100, 100, 255);
             font-weight: 900;
 
         }
@@ -96,7 +100,7 @@
         <p>River</p>
       </div>
       <div class="heading">Marble Rocks of Bhedaghat</div>
-      <div class="description">Situated on the Narmada river, Marble rocks of Bhedaghat in Jabalpur and truly a mesmerizing sight. The gushing Dhuandhar waterfalls along with the Marble rocks is a gorgeous creation of nature.</div>
+      <div class="description"><p>Situated on the Narmada river, Marble rocks of Bhedaghat in Jabalpur and truly a mesmerizing sight. The gushing Dhuandhar waterfalls along with the Marble rocks is a gorgeous creation of nature.</p></div>
       <div class="readmore"><a href="#"><button>Read More</button></a></div>
     </div>
   </body>
