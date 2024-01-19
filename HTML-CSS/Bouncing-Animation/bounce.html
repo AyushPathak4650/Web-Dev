@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Bouncing Animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            position: absolute;
+            background-color: aquamarine;
+            width: 80vw;
+            height: 40vh;
+            margin-left: 10%;
+            margin-top:10%;
+        }
+        .ball{
+            position: absolute;
+            bottom: 0px;
+            width: 4vw;
+            height: 4vw;
+            border-radius: 50%;
+            background-color: red;
+            animation: 1s cubic-bezier(0, 0, 0.32, 1.02) 3s infinite alternate Bouncing,
+                       7s linear 3s infinite Rolling;  
+        }
+        @keyframes Bouncing {
+            from{
+                bottom: 0%;
+            }
+            to{
+                bottom: 60%;
+            }
+        }
+        @keyframes Rolling {
+            from{
+                left: 0%;
+            }
+            to{
+                left: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
