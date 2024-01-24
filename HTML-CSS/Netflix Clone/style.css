@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #232323;
+}
+
+/* HEADER */
+.main {
+    position: relative;
+    background-image: url(assets/images/bgimage.jpg);
+    background-position: center center;
+    background-repeat: none;
+    background-size: max(1300px, 100vw);
+    height: 700px;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    height: 65px;
+    margin: auto;
+    padding: 10px;
+}
+
+nav img {
+    position: relative;
+    z-index: 1;
+    width: 190px;
+}
+
+.nav-items {
+    z-index: 1;
+}
+
+.main .box {
+    position: absolute;
+    top: 0px;
+    height: inherit;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+}
+
+.language img {
+    width: 14px;
+}
+
+.language {
+    background-color: #0f0f0fb0;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.language select {
+    font-size: 16px;
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+
+.language select option {
+    border: none;
+    font-size: inherit;
+}
+
+.language1 {
+    margin-right: 1.5vw;
+}
+
+.redbutton {
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #ce131c;
+}
+
+#signin {
+    margin-right: 20px;
+    padding: 10px 20px;
+}
+
+.hero {
+    position: relative;
+    top: 0px;
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    gap: 1rem;
+    text-align: center;
+}
+
+.hero> :first-child {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.8rem;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.email {
+    width: 590px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.email input {
+    width: 65%;
+    font-size: 1rem;
+    background-color: #0f0f0fb0;
+    color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    padding: 15px 60px 15px 20px;
+}
+
+#getstarted {
+    font-family: "Martel Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 10px 30px;
+}
+
+/* MAIN SECTION */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 6px;
+    height: 530px;
+    background-color: black;
+}
+
+.text {
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 40%;
+}
+
+.text> :nth-child(1) {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    font-size: 3rem;
+    font-weight: 1000;
+}
+
+.text> :nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.player {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 35vw;
+    position: relative;
+    z-index: 10;
+}
+
+#content1 video {
+    position: absolute;
+    width: 27.2vw;
+}
+
+#content2 .text {
+    width: 45%;
+}
+
+#content2 .player {
+    margin-left: 7%;
+}
+
+#content3 video {
+    position: absolute;
+    width: 22vw;
+    margin-bottom: 10vw;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    padding-left: 12%;
+    height: 400px;
+    background-color: black;
+    color: #b3b3b3;
+    justify-content: center;
+}
+
+.contact {
+    font-size: 1rem;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+        sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.links {
+    display: flex;
+}
+
+ul {
+    margin-right: 11vw;
+    margin-bottom: 15px;
+}
+
+li {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+#netind {
+    font-size: 0.95rem;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 9px;
+    }
+
+    .main {
+        height: 520px;
+    }
+
+    nav {
+        margin: 0;
+        width: 100vw;
+    }
+
+    nav img {
+        width: 130px;
+    }
+
+    .email {
+        height: 45px;
+        flex-wrap: wrap;
+    }
+
+    .email input {
+        width: 445px;
+    }
+
+    #getstarted {
+        width: 140px;
+    }
+
+    .player {
+        width: 350px;
+    }
+
+    img {
+        width: 350px;
+    }
+
+    #content1 video {
+        width: 265px;
+    }
+
+    #content3 video {
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 7px;
+    }
+    .email {
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        height: 90px;
+        width: 90%;
+    }
+
+    .email input {
+        align-self: center;
+        width: 90%;
+    }
+
+    #getstarted {
+        align-self: center;
+    }
+
+    .content {
+        height: 600px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .content .text {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .content .text p{
+        display: inline;
+    }
+    .player {
+        width: 100%;
+        height: 60%;
+    }
+    img {
+        width: 300px;
+    }
+
+    #content1 video {
+        width: 225px;
+    }
+
+    #content3 video {
+        width: 160px;
+        margin-bottom: 25%;
+    }
+    nav img {
+        width: 100px;
+    }
+    #signin {
+        margin-right: 0px;
+    }
+    .text> :nth-child(1) {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+}
