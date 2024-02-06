@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Text Change Using JS</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: antiquewhite;
+            margin: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box">First Div</div>
+    <div class="box">Second Div</div>
+    <div class="box">Third Div</div>
+    <script>
+      let divs = document.querySelectorAll(".box");
+      let i = 1;
+      for (const div of divs) {
+        div.innerText = `Some New Text ${i}`;
+        i++;
+      }
+    </script>
+  </body>
+</html>

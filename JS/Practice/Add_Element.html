@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Elements Through Js</title>
+    <style>
+        .content{
+            color: blue;
+        }
+        .newClass{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <p class="content">This is a line</p>
+
+    <script>
+        // Button
+        let newButton = document.createElement("Button")
+        newButton.style.backgroundColor = "red"
+        newButton.style.color = "White"
+        newButton.innerText = "Click Me!"
+        document.querySelector("body").prepend(newButton)
+        
+        // p
+        let para = document.querySelector("p")
+        para.classList.add("newClass")
+    </script>
+</body>
+</html>
